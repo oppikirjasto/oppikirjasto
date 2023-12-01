@@ -11,65 +11,65 @@ export const headerData = {
       links: [
         {
           text: 'Ruotsi',
-          href: '#',
+          href: getPermalink('books/kielet/ruotsi'),
         },
         {
           text: 'Englanti',
-          href: '#',
+          href: getPermalink('books/kielet/englanti'),
         },
       ],
     },
     {
       text: 'Matematiikka',
-      href: '#',
+      href: getPermalink('books/matematiikka'),
     },
     {
       text: 'Ympäristöoppi',
-      href: '#',
+      href: getPermalink('books/ymparistooppi'),
     },
     {
       text: 'Maantieto',
-      href: '#',
+      href: getPermalink('books/maantieto'),
     },
     {
       text: 'Fysiikka',
-      href: '#',
+      href: getPermalink('books/fysiikka'),
     },
     {
       text: 'Terveystieto',
-      href: '#',
+      href: getPermalink('books/terveystieto'),
     },
     {
       text: 'Uskonto',
-      href: '#',
+      href: getPermalink('books/uskonto'),
     },
     {
       text: 'Historia',
-      href: '#',
+      href: getPermalink('books/historia'),
     },
     {
       text: 'Musiikki',
-      href: '#',
+      href: getPermalink('books/musiikki'),
     },
     {
       text: 'Kuvataide',
-      href: '#',
+      href: getPermalink('books/kuvataide'),
     },
     {
       text: 'Käsityö',
-      href: '#',
+      href: getPermalink('books/kasityo'),
     },
     {
       text: 'Liikunta',
-      href: '#',
+      href: getPermalink('books/liikunta'),
     },
     {
       text: 'Kotitalous',
-      href: '#',
+      href: getPermalink('books/kotitalous'),
     },
     {
       text: 'Ammatit',
-      href: '#',
+      href: getPermalink('books/ammatit'),
     },
   ],
 };
