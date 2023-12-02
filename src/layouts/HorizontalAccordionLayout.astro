@@ -1,8 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '~/layouts/PageLayout.astro';
 import MarkdownLayout from './MarkdownLayout.astro';
-import {Content as Level2} from '../content/books/aidinkieli-kirjallisuuden.md';
-
+import TableOfContents from '../components/TableOfContents.astro';
 import type { MetaData } from '~/types';
 
 const { frontmatter } = Astro.props;
@@ -12,24 +12,26 @@ const { Content, headings } = await frontmatter.render();
 const metadata: MetaData = {
   title: frontmatter?.title,
 };
+
+const keywordPages = await getCollection('books', ({ slug }) => {
+  return slug.startsWith(frontmatter.slug) && slug !== frontmatter.slug;
+});
 ---
 
 <Layout metadata={metadata}>
   <div class="haccordion__wrapper">
     <div class="first_column">
-      <MarkdownLayout frontmatter={frontmatter.data} headings={headings}>
+      <div class="px-4 sm:px-6 margin-left:3rem lg:px-8 max-w-4x" style="float:left; margin-top:1rem;">
+        <TableOfContents headings={headings} />
+      </div>
+      <MarkdownLayout frontmatter={frontmatter}>
         <Content />
       </MarkdownLayout>
     </div>
     <div class="second_column">
-      <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-        <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">Kirjallisuus</h1>
-        <div
-          class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
-        >
-          <Level2 />
-        </div>
-      </section>
+      {keywordPages.map(page => (
+        <MarkdownLayout frontmatter={page} />
+      ))}
     </div>
   </div>
 </Layout>
