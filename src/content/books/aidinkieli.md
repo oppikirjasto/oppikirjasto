@@ -8,6 +8,8 @@ Hei! Tervetuloa aloittamaan äidinkielen ja **kirjallisuuden** seikkailua! Tän�
 
 Ensimmäisenä askeleena opimme tuntemaan kirjaimet. Nämä pienet merkit ovat kuin taikapalikoita, jotka auttavat meitä luomaan sanoja, lauseita ja lopulta juttuja, joita voimme jakaa toistemme kanssa. Tutustumme myös äänteisiin, joita kirjaimet edustavat, ja harjoittelemme niiden ääntämistä.
 
+![Kuvituskuva](../../assets/images/aidinkieli-kuvituskuva.png)
+
 Kun tunnemme jo kirjaimet, alamme yhdistellä niitä sanoiksi. Saat nähdä, kuinka monta erilaista sanaa voit keksiä ja kuinka ne liittyvät toisiinsa. Opettajan johdolla teemme tehtäviä, jotka vahvistavat sanavarastoa ja ymmärrämme, kuinka lauseet rakentuvat.
 
 Lukeminen on kuin aarteenetsintää; löydät uusia sanoja ja maailmoja kirjan sivuilta. Me harjoittelemme yhdessä lukemaan ääneen ja hiljaa mielessämme. Tarinat heräävät eloon, kun seuraamme sankareita heidän seikkailuissaan ja opimme samalla uusia asioita maailmasta ja ihmisistä ympärillämme.
