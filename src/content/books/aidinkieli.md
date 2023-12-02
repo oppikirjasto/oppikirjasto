@@ -2,7 +2,7 @@
 title: 'Tervetuloa oppimaan!'
 ---
 
-Hei! Tervetuloa aloittamaan äidinkielen ja kirjallisuuden seikkailua! Tänä vuonna opimme paljon uusia asioita: kirjoittamaan kauniita kirjaimia, lukemaan jännittäviä tarinoita, ja oikeinkirjoituksen saloja. Meillä on edessä hauskoja tehtäviä, kivoja pelejä ja mahtavia tarinoita, jotka vievät meidät mielikuvituksen maailmaan. Aloitetaan yhdessä tämä ihmeellinen matka sanojen maailmaan!
+Hei! Tervetuloa aloittamaan äidinkielen ja **kirjallisuuden** seikkailua! Tänä vuonna opimme paljon uusia asioita: kirjoittamaan kauniita kirjaimia, lukemaan jännittäviä tarinoita, ja oikeinkirjoituksen saloja. Meillä on edessä hauskoja tehtäviä, kivoja pelejä ja mahtavia tarinoita, jotka vievät meidät mielikuvituksen maailmaan. Aloitetaan yhdessä tämä ihmeellinen matka sanojen maailmaan!
 
 ## 2. Äänteet ja kirjaimet
 

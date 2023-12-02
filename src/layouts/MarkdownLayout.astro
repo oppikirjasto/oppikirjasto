@@ -1,8 +1,7 @@
 ---
 import TableOfContents from '../components/TableOfContents.astro';
-import Layout from '~/layouts/PageLayout.astro';
 
-import type { MetaData, Heading } from '~/types';
+import type { Heading } from '~/types';
 
 export interface Props {
   frontmatter: {
@@ -13,21 +12,16 @@ export interface Props {
 
 const { frontmatter, headings } = Astro.props;
 
-const metadata: MetaData = {
-  title: frontmatter?.title,
-};
 ---
 
-<Layout metadata={metadata}>
-  <div class="px-4 sm:px-6 margin-left:3rem lg:px-8 max-w-4x" style="float:left; margin-top:1rem;">
-    <TableOfContents headings={headings} />
+<div class="px-4 sm:px-6 margin-left:3rem lg:px-8 max-w-4x" style="float:left; margin-top:1rem;">
+  <TableOfContents headings={headings} />
+</div>
+<section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+  <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">{frontmatter.title}</h1>
+  <div
+    class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
+  >
+    <slot />
   </div>
-  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">{frontmatter.title}</h1>
-    <div
-      class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
-    >
-      <slot />
-    </div>
-  </section>
-</Layout>
+</section>

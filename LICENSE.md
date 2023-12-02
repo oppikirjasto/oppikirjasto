@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Tatu Lindroos
+Copyright (c) 2023 Tatu Lindroos  
 Copyright (c) 2023 onWidget
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

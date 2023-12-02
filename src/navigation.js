@@ -11,11 +11,11 @@ export const headerData = {
       links: [
         {
           text: 'Ruotsi',
-          href: getPermalink('books/kielet/ruotsi'),
+          href: getPermalink('books/ruotsi'),
         },
         {
           text: 'Englanti',
-          href: getPermalink('books/kielet/englanti'),
+          href: getPermalink('books/englanti'),
         },
       ],
     },

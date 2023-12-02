@@ -1,19 +1,16 @@
 ---
 import { getCollection } from 'astro:content';
-import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+import HorizontalAccordionLayout from '../../layouts/HorizontalAccordionLayout.astro';
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('books');
-  return blogEntries.map((entry) => ({
+  const bookEntries = await getCollection('books');
+  return bookEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content, headings } = await entry.render();
 ---
 
-<MarkdownLayout frontmatter={entry.data} headings={headings}>
-  <Content />
-</MarkdownLayout>
+<HorizontalAccordionLayout frontmatter={entry} />
