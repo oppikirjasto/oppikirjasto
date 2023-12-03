@@ -1,5 +1,5 @@
 ---
-Title: Seikkailu Maapallolla – Maantiedon mestaruuspolku yläkoululaisille
+title: Seikkailu Maapallolla – Maantiedon mestaruuspolku yläkoululaisille
 ---
 
 ## Tutkimusmatka Maapallon Sydämeen
