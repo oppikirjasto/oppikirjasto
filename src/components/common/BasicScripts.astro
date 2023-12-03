@@ -63,6 +63,15 @@ import { UI } from '~/utils/config';
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     });
 
+    attachEvent('div.first_column', 'click', function (e) {
+      if (!e.target.classList.contains('keyword'))
+        document.querySelector("div.first_column").style.flexBasis = "90%";
+    });
+
+    attachEvent('button.keyword', 'click', function () {
+      document.querySelector("div.first_column").style.flexBasis = "25%";
+    });
+
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
       const network = elem.getAttribute('data-aw-social-share');
       const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
