@@ -1,0 +1,14 @@
+---
+export interface Props {
+  text: string;
+  link: string;
+}
+
+const { text, link } = Astro.props;
+---
+
+{
+    <button type="button" class="keyword font-bold" aria-label={link} data-aw-test-button>
+        {text}
+    </button>
+}
