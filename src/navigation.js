@@ -24,8 +24,8 @@ export const headerData = {
       href: getPermalink('books/7-9/matematiikka'),
     },
     {
-      text: 'Ympäristöoppi',
-      href: getPermalink('books/7-9/ymparistooppi'),
+      text: 'Biologia',
+      href: getPermalink('books/7-9/biologia'),
     },
     {
       text: 'Maantieto',
@@ -36,6 +36,10 @@ export const headerData = {
       href: getPermalink('books/7-9/fysiikka'),
     },
     {
+      text: 'Kemia',
+      href: getPermalink('books/7-9/kemia'),
+    },
+    {
       text: 'Terveystieto',
       href: getPermalink('books/7-9/terveystieto'),
     },
@@ -44,8 +48,16 @@ export const headerData = {
       href: getPermalink('books/7-9/uskonto'),
     },
     {
+      text: 'Elämänkatsomustieto',
+      href: getPermalink('books/7-9/elamankatsomustieto'),
+    },
+    {
       text: 'Historia',
       href: getPermalink('books/7-9/historia'),
+    },
+    {
+      text: 'Yhteiskuntaoppi',
+      href: getPermalink('books/7-9/yhteiskuntaoppi'),
     },
     {
       text: 'Musiikki',
