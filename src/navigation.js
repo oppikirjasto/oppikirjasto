@@ -83,5 +83,13 @@ export const headerData = {
       text: 'Ammatit',
       href: getPermalink('books/7-9/ammatit'),
     },
+    {
+      text: 'Haku',
+      href: getPermalink('haku'),
+    },
+    {
+      text: 'Paperi',
+      href: getPermalink('paperi'),
+    },
   ],
 };
