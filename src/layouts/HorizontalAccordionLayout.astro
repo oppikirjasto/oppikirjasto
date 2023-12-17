@@ -1,37 +1,23 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '~/layouts/PageLayout.astro';
 import MarkdownLayout from './MarkdownLayout.astro';
-import TableOfContents from '../components/TableOfContents.astro';
 import type { MetaData } from '~/types';
 
 const { frontmatter } = Astro.props;
 
-const { Content, headings } = await frontmatter.render();
+const { Content } = await frontmatter.render();
 
 const metadata: MetaData = {
   title: frontmatter?.title,
 };
-
-const keywordPages = await getCollection('books', ({ slug }) => {
-  return slug.startsWith(frontmatter.slug) && slug !== frontmatter.slug;
-});
 ---
 
 <Layout metadata={metadata}>
   <div class="haccordion__wrapper">
     <div class="first_column">
-      <div class="px-4 sm:px-6 margin-left:3rem lg:px-8 max-w-4x" style="float:left; margin-top:1rem;">
-        <TableOfContents headings={headings} />
-      </div>
       <MarkdownLayout frontmatter={frontmatter}>
         <Content />
       </MarkdownLayout>
-    </div>
-    <div class="second_column">
-      {keywordPages.map(page => (
-        <MarkdownLayout frontmatter={page} />
-      ))}
     </div>
   </div>
 </Layout>
