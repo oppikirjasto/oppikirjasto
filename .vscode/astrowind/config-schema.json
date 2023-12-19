@@ -116,31 +116,6 @@
       },
       "required": ["language", "textDirection"]
     },
-    "analytics": {
-      "type": "object",
-      "properties": {
-        "vendors": {
-          "type": "object",
-          "properties": {
-            "googleAnalytics": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": ["string", "null"]
-                },
-                "partytown": {
-                  "type": "boolean",
-                  "default": true
-                }
-              },
-              "required": ["id"]
-            }
-          },
-          "required": ["googleAnalytics"]
-        }
-      },
-      "required": ["vendors"]
-    },
     "ui": {
       "type": "object",
       "properties": {
@@ -305,5 +280,5 @@
       "required": ["theme", "tokens"]
     }
   },
-  "required": ["site", "metadata", "i18n", "apps", "analytics", "ui"]
+  "required": ["site", "metadata", "i18n", "apps", "ui"]
 }

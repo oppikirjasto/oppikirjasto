@@ -22,21 +22,12 @@ export interface I18NConfig {
   textDirection: string;
   dateFormatter?: Intl.DateTimeFormat;
 }
-export interface AnalyticsConfig {
-  vendors: {
-    googleAnalytics: {
-      id?: string;
-      partytown?: boolean;
-    };
-  };
-}
 
 const config = yaml.load(fs.readFileSync('src/config.yaml', 'utf8')) as {
   site?: SiteConfig;
   metadata?: MetaDataConfig;
   i18n?: I18NConfig;
   ui?: unknown;
-  analytics?: unknown;
 };
 
 const DEFAULT_SITE_NAME = 'Website';
@@ -103,21 +94,7 @@ const getUI = () => {
   return merge({}, _default, config?.ui ?? {});
 };
 
-const getAnalytics = () => {
-  const _default = {
-    vendors: {
-      googleAnalytics: {
-        id: undefined,
-        partytown: true,
-      },
-    },
-  };
-
-  return merge({}, _default, config?.analytics ?? {}) as AnalyticsConfig;
-};
-
 export const SITE = getSite();
 export const I18N = getI18N();
 export const METADATA = getMetadata();
 export const UI = getUI();
-export const ANALYTICS = getAnalytics();
