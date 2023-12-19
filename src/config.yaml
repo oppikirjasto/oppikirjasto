@@ -1,6 +1,6 @@
 site:
-  name: Koulukirjat
-  site: 'https://koulukirjat.fi'
+  name: Oppikirjasto
+  site: 'https://oppikirjasto.fi'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Koulukirjat
-    template: '%s — Koulukirjat'
-  description: "\U0001F4DA Koulukirjat kaikille oppilaille."
+    default: Oppikirjasto
+    template: '%s — Oppikirjasto'
+  description: "\U0001F4DA Oppikirjat kaikille."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Koulukirjat
+    site_name: Oppikirjasto
     images:
       - url: '~/assets/images/default.png'
         width: 1200
