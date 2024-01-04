@@ -1,8 +1,7 @@
 ---
-import favIcon from '~/assets/favicons/favicon.ico';
-import favIconSvg from '~/assets/favicons/favicon.svg';
+const emoji = "📚"
+const emojiicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>"+emoji+"</text></svg>"
 ---
-
-<link rel="shortcut icon" href={favIcon} />
-<link rel="icon" type="image/svg+xml" href={favIconSvg.src} />
-<link rel="mask-icon" href={favIconSvg.src} color="#8D46E7" />
+<link rel="shortcut icon" href={emojiicon} />
+<link rel="icon" type={emojiicon} />
+<link rel="mask-icon" href={emojiicon} color="#8D46E7" />
