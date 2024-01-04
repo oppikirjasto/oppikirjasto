@@ -35,8 +35,8 @@ const DEFAULT_SITE_NAME = 'Website';
 const getSite = () => {
   const _default = {
     name: DEFAULT_SITE_NAME,
-    site: undefined,
-    base: '/',
+    site: 'https://www.oppikirjasto.fi',
+    base: undefined,
     trailingSlash: false,
 
     googleSiteVerificationId: '',
