@@ -2,14 +2,14 @@
 
 Emmekö voisi tehdä peruskoulun opetussuunnitelmaan perustuvat oppikirjat yhdessä, ja niin että kaikki saisivat lukea niitä vapaasti.
 
-[Oppikirjasto.fi](oppikirjasto.fi) on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
+[Oppikirjasto.fi](https://www.oppikirjasto.fi) on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
 
 ## Miten voit osallistua?
 
 Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita osallistumaan yhteisön rakentamiseen ja avoimien oppimateriaalien kehittämiseen. Voit auttaa monin eri tavoin:
 
 ### 1. Kirjojen tarkistus ja laadun parantaminen
-- Anna palautetta: Lue [oppikirjojamme](oppikirjasto.fi) ja anna palautetta mahdollisista virheistä tai parannuskohteista.
+- Anna palautetta: Lue [oppikirjojamme](https://www.oppikirjasto.fi) ja anna palautetta mahdollisista virheistä tai parannuskohteista.
 - Ehdota muutoksia: Voit ehdottaa muutoksia ja parannuksia suoraan tähän Github-säilytyspaikkaan, esimerkiksi avaamalla [uuden keskustelun](https://github.com/oppikirjasto/oppikirjasto/issues).
 
 ### 2. Sisällöntuotanto ja päivitys
