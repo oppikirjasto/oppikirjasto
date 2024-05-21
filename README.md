@@ -26,10 +26,6 @@ Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita osallistu
 2. Tutustu ohjeisiin: Lue projektin ohjeet ja säännöt, jotka löydät myös Githubista.
 3. Aloita osallistuminen: Valitse sinua kiinnostava osa-alue ja ala osallistumaan.
 
-### Yhteydenotto
-
-Jos sinulla on kysymyksiä tai ehdotuksia, voit ottaa meihin yhteyttä sähköpostitse: info@oppikirjasto.fi. Olemme täällä auttamassa sinua!
-
 ### Liity yhteisöömme
 
 Tehdään yhdessä oppimisesta parempaa ja tasavertaisempaa kaikille Suomen koululaisille. Liity projektiimme ja osallistu uuden, avoimen ja ilmaisen oppikirjaston rakentamiseen!
