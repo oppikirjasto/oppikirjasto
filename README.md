@@ -2,15 +2,15 @@
 
 Emmekö voisi tehdä peruskoulun opetussuunnitelmaan perustuvat oppikirjat yhdessä, ja niin että kaikki saisivat lukea niitä vapaasti.
 
-Oppikirjasto.fi on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
+[Oppikirjasto.fi](oppikirjasto.fi) on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
 
 ## Miten voit osallistua?
 
 Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita osallistumaan yhteisön rakentamiseen ja avoimien oppimateriaalien kehittämiseen. Voit auttaa monin eri tavoin:
 
 ### 1. Kirjojen tarkistus ja laadun parantaminen
-- Anna palautetta: Lue oppikirjojamme ja anna palautetta mahdollisista virheistä tai parannuskohteista.
-- Ehdota muutoksia: Voit ehdottaa muutoksia ja parannuksia suoraan tähän Github-repositorioon.
+- Anna palautetta: Lue [oppikirjojamme](oppikirjasto.fi) ja anna palautetta mahdollisista virheistä tai parannuskohteista.
+- Ehdota muutoksia: Voit ehdottaa muutoksia ja parannuksia suoraan tähän Github-säilytyspaikkaan, esimerkiksi avaamalla [uuden keskustelun](https://github.com/oppikirjasto/oppikirjasto/issues).
 
 ### 2. Sisällöntuotanto ja päivitys
 - Kirjoita uusia lukuja: Voit kirjoittaa uusia lukuja tai osioita oppikirjoihin.
@@ -22,7 +22,7 @@ Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita osallistu
 
 ### Miten aloittaa?
 
-1. Luo käyttäjätili GihHub-palveluun, jotta voit osallistua keskusteluun ja seuraamaan projektin edistymistä.
+1. Luo käyttäjätili GitHub-palveluun, jotta voit osallistua keskusteluun ja seurata projektin edistymistä.
 2. Tutustu ohjeisiin: Lue projektin ohjeet ja säännöt, jotka löydät myös Githubista.
 3. Aloita osallistuminen: Valitse sinua kiinnostava osa-alue ja ala osallistumaan.
 
@@ -33,7 +33,7 @@ Tehdään yhdessä oppimisesta parempaa ja tasavertaisempaa kaikille Suomen koul
 ### How to develop and run locally
 
 - Requirements: Git, Node and Npm
-- clone repository from cmd / terminal with command `git clone https://github.com/taturl/oppikirjasto.git`
+- clone repository from cmd / terminal with command `git clone https://github.com/oppikirjasto/oppikirjasto.git`
 - from command line change directory to the new directory with `cd oppikirjasto`
 - run `npm install` to install dependencies
 - run `npm run dev` to start local development server at [localhost:4321](localhost:4321) 
