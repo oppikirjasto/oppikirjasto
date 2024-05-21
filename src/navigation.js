@@ -83,6 +83,7 @@ export const headerData = {
       text: 'Ammatit',
       href: getPermalink('books/7-9/ammatit'),
     },
+    /* Links currently hidden from the navigation as the page content is lacking */
     /*
     {
       text: 'Haku',
