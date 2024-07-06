@@ -72,7 +72,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Oppikirjasto',
       logo: {
         alt: 'My Site Logo',
         src: 'img/favicon.ico',
@@ -80,14 +80,13 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'sevenToNineSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Yläkoulu',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/oppikirjasto/oppikirjasto',
+          label: 'Osallistu',
           position: 'right',
         },
       ],
