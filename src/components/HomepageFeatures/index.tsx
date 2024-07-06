@@ -10,32 +10,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Mikä?',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Oppikirjasto.fi on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Miten voin osallistua?',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita
+        osallistumaan yhteisön rakentamiseen ja avoimien oppimateriaalien
+        kehittämiseen. Voit auttaa monin eri tavoin: kirjojen laadun tarkistamisessa
+        tai uusien tekstien luomisessa. Seuraa oikean yläkulman linkkiä lisäohjeisiin.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Tietoja sivusta',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Tämä sivusto ja sen sisältö on avointa koodia MIT-lisenssillä. Sisältö (kirjat)
+        on luotu ensin tekoälyllä, jota on sen jälkeen täydennetty ihmisten toimesta.
+        Itse sivusto on oppikirjaston tekijöiden tekemä ja sen pohjana on käytetty
+        Docusaurusta (myös MIT-lisenssi).
       </>
     ),
   },
