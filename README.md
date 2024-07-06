@@ -1,59 +1,41 @@
-# Oppikirjasto
+# Website
 
-Emmekö voisi tehdä peruskoulun opetussuunnitelmaan perustuvat oppikirjat yhdessä, ja niin että kaikki saisivat lukea niitä vapaasti.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-[Oppikirjasto.fi](https://www.oppikirjasto.fi) on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
+### Installation
 
-## Miten voit osallistua?
+```
+$ yarn
+```
 
-Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita osallistumaan yhteisön rakentamiseen ja avoimien oppimateriaalien kehittämiseen. Voit auttaa monin eri tavoin:
+### Local Development
 
-### 1. Kirjojen tarkistus ja laadun parantaminen
-- Anna palautetta: Lue [oppikirjojamme](https://www.oppikirjasto.fi) ja anna palautetta mahdollisista virheistä tai parannuskohteista.
-- Ehdota muutoksia: Voit ehdottaa muutoksia ja parannuksia suoraan tähän Github-säilytyspaikkaan, esimerkiksi avaamalla [uuden keskustelun](https://github.com/oppikirjasto/oppikirjasto/issues).
+```
+$ yarn start
+```
 
-### 2. Sisällöntuotanto ja päivitys
-- Kirjoita uusia lukuja: Voit kirjoittaa uusia lukuja tai osioita oppikirjoihin.
-- Päivitä olemassa olevia: Päivitä ja laajenna jo olemassa olevaa sisältöä.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### 3. Käytännön apu
-- Tekninen tuki: Osallistu tekniseen kehitykseen ja paranna sivuston käytettävyyttä.
-- Markkinointi ja viestintä: Levitä sanaa projektistamme ja tuo lisää osallistujia mukaan.
+### Build
 
-### Miten aloittaa?
+```
+$ yarn build
+```
 
-1. Luo käyttäjätili GitHub-palveluun, jotta voit osallistua keskusteluun ja seurata projektin edistymistä.
-2. Tutustu ohjeisiin: Lue projektin ohjeet ja säännöt, jotka löydät myös Githubista.
-3. Aloita osallistuminen: Valitse sinua kiinnostava osa-alue ja ala osallistumaan.
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Liity yhteisöömme
+### Deployment
 
-Tehdään yhdessä oppimisesta parempaa ja tasavertaisempaa kaikille Suomen koululaisille. Liity projektiimme ja osallistu uuden, avoimen ja ilmaisen oppikirjaston rakentamiseen!
+Using SSH:
 
-### How to develop and run locally
+```
+$ USE_SSH=true yarn deploy
+```
 
-- Requirements: Git, Node and Npm
-- clone repository from cmd / terminal with command `git clone https://github.com/oppikirjasto/oppikirjasto.git`
-- from command line change directory to the new directory with `cd oppikirjasto`
-- run `npm install` to install dependencies
-- run `npm run dev` to start local development server at [localhost:4321](localhost:4321) 
+Not using SSH:
 
-All commands are run from the root of the project, from a terminal:
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
 
-| Command               | Action                                             |
-| :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:4321`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
-
-## Acknowledgements
-
-Website template was created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
-## License
-
-**Oppikirjasto** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

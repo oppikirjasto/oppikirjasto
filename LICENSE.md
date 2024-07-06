@@ -1,7 +1,7 @@
 MIT License
 
-Copyright (c) 2023 Tatu Lindroos  
-Copyright (c) 2023 onWidget
+Copyright (c) Tatu Lindroos  
+Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
