@@ -100,7 +100,7 @@ const config: Config = {
           href: 'https://github.com/oppikirjasto/oppikirjasto',
         },
       ],
-      copyright: `Sisältö on käytettävissä lisenssillä MIT, ellei toisin ole mainittu.`,
+      copyright: `Sisältö on käytettävissä MIT-lisenssillä, ellei toisin ole mainittu.`,
     },
     prism: {
       theme: prismThemes.github,
