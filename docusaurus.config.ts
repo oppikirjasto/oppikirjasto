@@ -5,8 +5,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'Oppikirjasto',
-  tagline: 'Täältä löydät vapaat koulukirjat kaikille 📚',
+  title: '📚 Oppikirjasto',
+  tagline: 'Täältä löydät vapaat koulukirjat kaikille',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
