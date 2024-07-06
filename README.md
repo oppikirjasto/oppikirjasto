@@ -1,41 +1,58 @@
-# Website
+# Oppikirjasto
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Emmekö voisi tehdä peruskoulun opetussuunnitelmaan perustuvat oppikirjat yhdessä, ja niin että kaikki saisivat lukea niitä vapaasti.
 
-### Installation
+[Oppikirjasto.fi](https://www.oppikirjasto.fi) on uusi, avoin, maksuton ja kattava digitaalinen oppimateriaalikirjasto yläkoulun oppilaille Suomessa. Tekoälyn avulla generoidut oppikirjat kattavat koko yläasteen opetussuunnitelman kaikissa aineissa. Tavoitteemme on tarjota kaikille Suomen koululaisille parhaimmat mahdolliset opetusmateriaalit ja näin tehdä oppimisesta tasavertaisempaa.
 
-```
-$ yarn
-```
+## Miten voit osallistua?
 
-### Local Development
+Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita osallistumaan yhteisön rakentamiseen ja avoimien oppimateriaalien kehittämiseen. Voit auttaa monin eri tavoin:
 
-```
-$ yarn start
-```
+### 1. Kirjojen tarkistus ja laadun parantaminen
+- Anna palautetta: Lue [oppikirjojamme](https://www.oppikirjasto.fi) ja anna palautetta mahdollisista virheistä tai parannuskohteista.
+- Ehdota muutoksia: Voit ehdottaa muutoksia ja parannuksia suoraan tähän Github-säilytyspaikkaan, esimerkiksi avaamalla [uuden keskustelun](https://github.com/oppikirjasto/oppikirjasto/issues).
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### 2. Sisällöntuotanto ja päivitys
+- Kirjoita uusia lukuja: Voit kirjoittaa uusia lukuja tai osioita oppikirjoihin.
+- Päivitä olemassa olevia: Päivitä ja laajenna jo olemassa olevaa sisältöä.
 
-### Build
+### 3. Käytännön apu
+- Tekninen tuki: Osallistu tekniseen kehitykseen ja paranna sivuston käytettävyyttä.
+- Markkinointi ja viestintä: Levitä sanaa projektistamme ja tuo lisää osallistujia mukaan.
 
-```
-$ yarn build
-```
+### Miten aloittaa?
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+1. Luo käyttäjätili GitHub-palveluun, jotta voit osallistua keskusteluun ja seurata projektin edistymistä.
+2. Tutustu ohjeisiin: Lue projektin ohjeet ja säännöt, jotka löydät myös Githubista.
+3. Aloita osallistuminen: Valitse sinua kiinnostava osa-alue ja ala osallistumaan.
 
-### Deployment
+### Liity yhteisöömme
 
-Using SSH:
+Tehdään yhdessä oppimisesta parempaa ja tasavertaisempaa kaikille Suomen koululaisille. Liity projektiimme ja osallistu uuden, avoimen ja ilmaisen oppikirjaston rakentamiseen!
 
-```
-$ USE_SSH=true yarn deploy
-```
+### How to develop and run locally
 
-Not using SSH:
+- Requirements: Git, Node and Npm
+- clone repository from cmd / terminal with command `git clone https://github.com/oppikirjasto/oppikirjasto.git`
+- from command line change directory to the new directory with `cd oppikirjasto`
+- run `npm install` to install dependencies
+- run `npm run start` to start local development server at [localhost:3000](localhost:3000) 
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+All commands are run from the root of the project, from a terminal:
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+| Command               | Action                                             |
+| :-------------------- | :------------------------------------------------- |
+| `npm install`         | Installs dependencies                              |
+| `npm run start`       | Starts local dev server at `localhost:3000`        |
+| `npm run build`       | Build your site to directory `./build/`            |
+| `npm run serve`       | Preview your build locally, before deploying       |
+
+## Acknowledgements
+
+Website is built with [Docusaurus](https://github.com/facebook/docusaurus).
+
+Search-functionality is from [docusaurus-lunr-search](https://github.com/praveenn77/docusaurus-lunr-search).
+
+## License
+
+**Oppikirjasto** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
