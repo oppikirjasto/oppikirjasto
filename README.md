@@ -36,23 +36,22 @@ Tehdään yhdessä oppimisesta parempaa ja tasavertaisempaa kaikille Suomen koul
 - clone repository from cmd / terminal with command `git clone https://github.com/oppikirjasto/oppikirjasto.git`
 - from command line change directory to the new directory with `cd oppikirjasto`
 - run `npm install` to install dependencies
-- run `npm run dev` to start local development server at [localhost:4321](localhost:4321) 
+- run `npm run start` to start local development server at [localhost:3000](localhost:3000) 
 
 All commands are run from the root of the project, from a terminal:
 
 | Command               | Action                                             |
 | :-------------------- | :------------------------------------------------- |
 | `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:4321`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
+| `npm run start`       | Starts local dev server at `localhost:3000`        |
+| `npm run build`       | Build your site to directory `./build/`            |
+| `npm run serve`       | Preview your build locally, before deploying       |
 
 ## Acknowledgements
 
-Website template was created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
+Website is built with [Docusaurus](https://github.com/facebook/docusaurus).
+
+Search-functionality is from [docusaurus-lunr-search](https://github.com/praveenn77/docusaurus-lunr-search).
 
 ## License
 

@@ -1,7 +1,8 @@
 MIT License
 
-Copyright (c) 2023 Tatu Lindroos  
-Copyright (c) 2023 onWidget
+Copyright (c) Oppikirjasto (Content, Website)
+Copyright (c) Praveen N (Search-plugin)
+Copyright (c) Facebook, Inc. and its affiliates. (Docusaurus)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
