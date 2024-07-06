@@ -52,6 +52,9 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  plugins: [[ require.resolve('docusaurus-lunr-search'), {
+    languages: ['fi']
+  }]],
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
