@@ -1,8 +1,9 @@
 MIT License
 
 Copyright (c) Oppikirjasto (Content, Website)
-Copyright (c) Praveen N (Search-plugin)
-Copyright (c) Facebook, Inc. and its affiliates. (Docusaurus)
+Copyright (c) Jean Humann (docs-to-pdf)
+Copyright (c) Praveen N (docusaurus-lunr-search)
+Copyright (c) Facebook, Inc. and its affiliates. (docusaurus)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
