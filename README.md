@@ -47,6 +47,16 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`       | Build your site to directory `./build/`            |
 | `npm run serve`       | Preview your build locally, before deploying       |
 
+## How to update PDF files
+
+```
+npm run build
+npm run serve
+
+# open another terminal and run:
+./scripts/build_pdfs.sh
+```
+
 ## Acknowledgements
 
 Website is built with [Docusaurus](https://github.com/facebook/docusaurus).
