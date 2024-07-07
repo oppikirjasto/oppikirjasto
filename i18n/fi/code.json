@@ -1,4 +1,12 @@
 {
+  "theme.common.editThisPage": {
+    "message": "Korjattavaa?",
+    "description": "The link label to edit the current page"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Seuraava kirja",
+    "description": "The label used to navigate to the next doc"
+  },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "Sisällysluettelo",
     "description": "The label used by the button on the collapsible TOC component"
