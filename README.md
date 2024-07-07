@@ -47,6 +47,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`               | Build your site to directory `./build/`            |
 | `npm run serve`               | Preview your build locally, before deploying       |
 | `npm run write-translations`  | Initialize translation files                       |
+| `npm run swizzle`             | Interactive CLI to customize a component           |
 
 ## How to update PDF files
 
