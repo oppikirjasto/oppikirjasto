@@ -40,12 +40,12 @@ export default function Quiz({subject, chapter}) {
 						{showResult ? (
 							<div className='result-section'>
 								<div className='result-text'>{selectedAnswerWhy}</div>
-								<button onClick={() => handleNextClick()}>Next!</button>
+								<button class="next-button" onClick={() => handleNextClick()}>Seuraavaan</button>
 							</div>
 						) : (
 							<div className='answer-section'>
 								{questions[currentQuestion].answerOptions.map((answerOption) => (
-									<button onClick={() => handleAnswerOptionClick(answerOption.answerWhy)}>{answerOption.answerText}</button>
+									<button class="answer-button" onClick={() => handleAnswerOptionClick(answerOption.answerWhy)}>{answerOption.answerText}</button>
 								))}
 							</div>
 						)}
