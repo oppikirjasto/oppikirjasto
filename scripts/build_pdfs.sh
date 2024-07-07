@@ -7,7 +7,10 @@ mkdir pdfbuild
 mkdir pdfbuild/output
 
 echo "Installing docs-to-pdf..."
-npm install --prefix ./pdfbuild docs-to-pdf
+npm install --prefix ./pdfbuild docs-to-pdf@0.6.2
+
+# Replace "Table of contents" with "Sisällysluettelo"
+sed -i -e 's/Table of contents/Sisällysluettelo/g' pdfbuild/node_modules/docs-to-pdf/lib/utils.js
 
 cd pdfbuild
 
