@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
         Etsimme opettajia, opiskelijoita ja kaikkia opetuksesta kiinnostuneita
         osallistumaan yhteisön rakentamiseen ja avoimien oppimateriaalien
         kehittämiseen. Voit auttaa monin eri tavoin: kirjojen laadun tarkistamisessa
-        tai uusien tekstien luomisessa. Seuraa oikean yläkulman linkkiä lisäohjeisiin.
+        tai uusien tekstien luomisessa. Seuraa yläkulman linkkiä lisäohjeisiin.
       </>
     ),
   },
