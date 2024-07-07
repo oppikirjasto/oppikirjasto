@@ -40,12 +40,13 @@ Tehdään yhdessä oppimisesta parempaa ja tasavertaisempaa kaikille Suomen koul
 
 All commands are run from the root of the project, from a terminal:
 
-| Command               | Action                                             |
-| :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run start`       | Starts local dev server at `localhost:3000`        |
-| `npm run build`       | Build your site to directory `./build/`            |
-| `npm run serve`       | Preview your build locally, before deploying       |
+| Command                       | Action                                             |
+| :---------------------------- | :------------------------------------------------- |
+| `npm install`                 | Installs dependencies                              |
+| `npm run start`               | Starts local dev server at `localhost:3000`        |
+| `npm run build`               | Build your site to directory `./build/`            |
+| `npm run serve`               | Preview your build locally, before deploying       |
+| `npm run write-translations`  | Initialize translation files                       |
 
 ## How to update PDF files
 
