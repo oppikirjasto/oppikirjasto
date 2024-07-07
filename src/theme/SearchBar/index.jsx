@@ -102,7 +102,7 @@ const Search = props => {
   if (isBrowser) {
     loadAlgolia();
     placeholder = window.navigator.platform.startsWith("Mac") ?
-      'Search ⌘+K' : 'Search Ctrl+K'
+      'Hae ⌘+K' : 'Hae Ctrl+K'
   }
 
   // auto focus search bar on page load
@@ -127,7 +127,7 @@ const Search = props => {
       <input
         id="search_input_react"
         type="search"
-        placeholder={indexReady ? placeholder : 'Loading...'}
+        placeholder={indexReady ? placeholder : 'Lataa..'}
         aria-label="Search"
         className={clsx(
           "navbar__search-input",
