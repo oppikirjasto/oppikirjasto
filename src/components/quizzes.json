@@ -1,0 +1,24 @@
+{
+    "Äidinkieli": {
+        "1.2": [
+            {
+                "questionText": "Mitä monikielisyys tarkoittaa?",
+                "answerOptions": [
+                    { "answerText": "Kykyä puhua vain yhtä kieltä", "isCorrect": false, "answerWhy": "❌ Monikielisyys tarkoittaa useamman kuin yhden kielen hallintaa, ei pelkästään yhden." },
+                    { "answerText": "Kykyä puhua ja ymmärtää useita kieliä", "isCorrect": true, "answerWhy": "✔️ Monikielisyys tarkoittaa kykyä puhua ja ymmärtää useita kieliä." },
+                    { "answerText": "Kykyä lukea kirjoja alkuperäiskielellä", "isCorrect": true, "answerWhy": "✔️ Monikielisyys voi auttaa lukemaan kirjoja alkuperäiskielellä." },
+                    { "answerText": "Kykyä matkustaa ympäri maailmaa", "isCorrect": true, "answerWhy": "✔️ Monikielisyys voi helpottaa matkustamista." }
+                ]
+            },
+            {
+                "questionText": "Miten monikielisyys voi rikastuttaa vapaa-aikaa?",
+                "answerOptions": [
+                    { "answerText": "Mahdollistamalla osallistumisen kansainvälisille leireille", "isCorrect": true, "answerWhy": "✔️ Monikielisyys avaa ovia kansainvälisille leireille, nuorisovaihtoihin ja matkoille." },
+                    { "answerText": "Estämällä uusien kielten oppimisen", "isCorrect": false, "answerWhy": "❌ Monikielisyys nimenomaan tukee uusien kielten oppimista." },
+                    { "answerText": "Rajoittamalla kulttuuriprojekteihin osallistumista", "isCorrect": false, "answerWhy": "❌ Monikielisyys voi rikastuttaa kulttuuriprojekteihin osallistumista tuomalla monia näkökulmia." },
+                    { "answerText": "Vähentämällä empatiaa muita kulttuureja kohtaan", "isCorrect": false, "answerWhy": "❌ Monikielisyys lisää empatiaa ja ymmärrystä muita kulttuureja kohtaan." }
+                ]
+            }
+        ]
+    }
+}
