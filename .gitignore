@@ -5,6 +5,7 @@ node_modules/
 /build
 dist/
 .output/
+pdfbuild/
 
 # generated files
 .docusaurus
