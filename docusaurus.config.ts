@@ -52,9 +52,24 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins: [[ require.resolve('docusaurus-lunr-search'), {
-    languages: ['fi']
-  }]],
+  plugins: [
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+        languages: ['fi']
+      }
+    ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+  ],
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
