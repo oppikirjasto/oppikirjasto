@@ -61,7 +61,7 @@
 .algolia-autocomplete .ds-dropdown-menu {
   overflow-y: scroll;
   position: relative;
-  height: 100vh;
+  max-height: 100vh;
   scrollbar-width: none;
   -webkit-scrollbar: none;
   -ms-overflow-style: none;
