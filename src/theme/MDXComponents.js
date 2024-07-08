@@ -8,6 +8,7 @@ import Image from '@theme/IdealImage';
 ReactPlayer.defaultProps.width = '100%'
 ReactPlayer.defaultProps.height = '100%'
 ReactPlayer.defaultProps.controls = true
+ReactPlayer.defaultProps.className = 'react-player'
 
 export default {
   ...MDXComponents,

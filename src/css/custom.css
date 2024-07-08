@@ -66,3 +66,8 @@
   -webkit-scrollbar: none;
   -ms-overflow-style: none;
 }
+
+/* Edge does not support height 100% (player hidden), therefore set it with vh here */
+.react-player audio {
+  height: 5vh !important;
+}
