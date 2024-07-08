@@ -7,6 +7,10 @@
     "message": "Seuraava kirja",
     "description": "The label used to navigate to the next doc"
   },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Takaisin päävalikkoon",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "Sisällysluettelo",
     "description": "The label used by the button on the collapsible TOC component"
