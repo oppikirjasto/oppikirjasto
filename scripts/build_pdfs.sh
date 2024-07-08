@@ -46,7 +46,7 @@ do
         --initialDocURLs="http://localhost:3000/docs/$path/$page" \
         --contentSelector="article" \
         --paginationSelector="only-this-page-please" \
-        --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,.quiz" \
+        --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,.quiz,video,audio" \
         --coverImage="http://localhost:3000/img/favicon.ico" \
         --coverTitle="$title" \
         --restrictPaths \
