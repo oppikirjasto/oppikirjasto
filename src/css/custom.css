@@ -56,3 +56,13 @@
   color: #000000;
   background-color: #94a0ca;
 }
+
+/* Search bar cannot be scrolled by default. Make scroll possible here. */
+.algolia-autocomplete .ds-dropdown-menu {
+  overflow-y: scroll;
+  position: relative;
+  height: 100vh;
+  scrollbar-width: none;
+  -webkit-scrollbar: none;
+  -ms-overflow-style: none;
+}
