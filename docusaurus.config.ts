@@ -91,57 +91,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'sidebar1',
-          position: 'left',
-          label: '1',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar2',
-          position: 'left',
-          label: '2',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar3',
-          position: 'left',
-          label: '3',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar4',
-          position: 'left',
-          label: '4',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar5',
-          position: 'left',
-          label: '5',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar6',
-          position: 'left',
-          label: '6',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar7',
-          position: 'left',
-          label: '7',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar8',
-          position: 'left',
-          label: '8',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'sidebar9',
           position: 'left',
-          label: '9',
+          label: 'Yläkoulu',
         },
         {
           href: 'https://github.com/oppikirjasto/oppikirjasto',
