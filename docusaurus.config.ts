@@ -91,7 +91,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'sevenToNineSidebar',
+          sidebarId: 'sidebar9',
           position: 'left',
           label: 'Yläkoulu',
         },
@@ -111,7 +111,7 @@ const config: Config = {
         },
         {
           label: 'Kirjoihin',
-          to: '/docs/7-9/aidinkieli',
+          to: '/docs/9/aidinkieli/suomen',
         },
         {
           label: 'Osallistu',
