@@ -15,42 +15,40 @@ sed -i -e 's/Table of contents/Sisällysluettelo/g' pdfbuild/node_modules/docs-t
 cd pdfbuild
 
 pages=(
-#   Title               Page                Path
-    Äidinkieli          aidinkieli          7-9
-    Ammatit             ammatit             7-9
-    Biologia            biologia            7-9
-    Elämänkatsomustieto elamankatsomustieto 7-9
-    Fysiikka            fysiikka            7-9
-    Historia            historia            7-9
-    Käsityö             kasityo             7-9
-    Kemia               kemia               7-9
-    Kotitalous          kotitalous          7-9
-    Kuvataide           kuvataide           7-9
-    Liikunta            liikunta            7-9
-    Maantieto           maantieto           7-9
-    Matematiikka        matematiikka        7-9
-    Musiikki            musiikki            7-9
-    Ruotsi              ruotsi              7-9
-    Terveystieto        terveystieto        7-9
-    Uskonto             uskonto             7-9
-    Yhteiskuntaoppi     yhteiskuntaoppi     7-9
+#   Title                               Path
+    "Äidinkieli 9 (suomen kielellä)"    9/aidinkieli/suomen
+    "Tulevaisuus 9"                     9/tulevaisuus
+    "Biologia 9"                        9/biologia
+    "Elämänkatsomustieto 9"             9/elamankatsomustieto
+    "Fysiikka 9"                        9/fysiikka
+    "Historia 9"                        9/historia
+    "Käsityö 9"                         9/kasityo
+    "Kemia 9"                           9/kemia
+    "Kotitalous 9"                      9/kotitalous
+    "Kuvataide 9"                       9/kuvataide
+    "Liikunta 9"                        9/liikunta
+    "Maantieto 9"                       9/maantieto
+    "Matematiikka 9"                    9/matematiikka
+    "Musiikki 9"                        9/musiikki
+    "Ruotsi (B1) 9"                     9/toinen/ruotsi-b1
+    "Terveystieto 9"                    9/terveystieto
 )
 rows=${#pages[*]} # number of 'rows'
-columns=3         # number of 'columns'
+columns=2         # number of 'columns'
 
 for ((i=0; i<$rows; i+=$columns))
 do
-    read title page path <<< "${pages[@]:$i:$columns}"
-    echo "Building PDF from $path/$page ..."
+    read title path <<< "${pages[@]:$i:$columns}"
+    echo "Building PDF from $path ..."
     npx docs-to-pdf \
-        --initialDocURLs="http://localhost:3000/docs/$path/$page" \
+        --initialDocURLs="http://localhost:3000/docs/$path" \
         --contentSelector="article" \
         --paginationSelector="only-this-page-please" \
         --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,.quiz,video,audio" \
         --coverImage="http://localhost:3000/img/favicon.ico" \
         --coverTitle="$title" \
         --restrictPaths \
-        --outputPDFFilename="output/$page.pdf"
+        --outputPDFFilename="output/$path.pdf"
 done
 echo "Building PDFs complete!"
 
