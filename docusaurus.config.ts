@@ -159,7 +159,7 @@ const config: Config = {
         },
         {
           label: 'Kirjoihin',
-          to: '/docs/9/aidinkieli',
+          to: '/docs/9/aidinkieli/suomen',
         },
         {
           label: 'Osallistu',
