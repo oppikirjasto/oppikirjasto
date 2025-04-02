@@ -1,0 +1,59 @@
+.module {
+  margin: 2rem 0;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  padding: 1.5rem;
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
+}
+
+.module:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.content {
+  /* Content styling will be handled by the individual components */
+}
+
+/* Module type-specific styling */
+.quiz {
+  border-left: 4px solid #4caf50;
+}
+
+.gallery {
+  border-left: 4px solid #2196f3;
+}
+
+.video {
+  border-left: 4px solid #f44336;
+}
+
+.flashcard {
+  border-left: 4px solid #ff9800;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .module {
+  background-color: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .module {
+    padding: 1rem;
+  }
+}

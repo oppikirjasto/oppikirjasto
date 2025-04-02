@@ -1,0 +1,36 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.incorrect {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--ifm-global-radius);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.explanation {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--ifm-global-radius);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .result,
+[data-theme='dark'] .explanation {
+  background-color: rgba(255, 255, 255, 0.05);
+}
