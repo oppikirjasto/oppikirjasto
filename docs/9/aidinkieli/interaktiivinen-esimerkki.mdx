@@ -1,0 +1,104 @@
+---
+title: Suomen kieli - Interaktiivinen esimerkki
+description: Esimerkki interaktiivisista elementeistä suomen kielen opetuksessa
+---
+
+import {InteractiveModule, Quiz, ImageGallery, VideoPlayer, FlashCard} from '@site/src/components/interactive';
+
+# Suomen kieli - Interaktiiviset elementit
+
+Tämä sivu esittelee erilaisia interaktiivisia elementtejä, joita voidaan käyttää Oppikirjaston kurssisisällöissä. Nämä elementit tekevät oppimisesta mielekkäämpää ja tehokkaampaa.
+
+## Kielioppi: Verbien taivutus
+
+Suomen kielessä verbejä taivutetaan persoonan, ajan ja tapaluokan mukaan. Seuraavassa on esimerkki verbien taivutuksesta.
+
+<InteractiveModule title="Verbien taivutus" type="quiz" description="Testaa tietämyksesi suomen verbien taivutuksesta.">
+  <Quiz
+    question="Mikä on verbin 'lukea' imperfektin yksikön ensimmäisen persoonan muoto?"
+    options={["luen", "luin", "lukisin", "olen lukenut"]}
+    correctAnswer={1}
+    explanation="Verbin 'lukea' imperfektin yksikön ensimmäisen persoonan muoto on 'luin'. Imperfekti ilmaisee mennyttä aikaa."
+  />
+</InteractiveModule>
+
+## Suomen murteet
+
+Suomen kielessä on useita murteita, jotka vaihtelevat alueittain. Tutustutaan niihin tarkemmin.
+
+<InteractiveModule title="Suomen murteet" type="gallery" description="Tutustu Suomen eri murteisiin tämän interaktiivisen gallerian avulla.">
+  <ImageGallery
+    images={[
+      {
+        src: '/img/undraw_docusaurus_mountain.svg',
+        alt: 'Länsimurteet',
+        caption: 'Länsimurteet ovat yleisiä Länsi-Suomessa'
+      },
+      {
+        src: '/img/undraw_docusaurus_tree.svg',
+        alt: 'Itämurteet',
+        caption: 'Itämurteet ovat yleisiä Itä-Suomessa'
+      },
+      {
+        src: '/img/undraw_docusaurus_react.svg',
+        alt: 'Pääkaupunkiseudun puhekieli',
+        caption: 'Pääkaupunkiseudulla puhutaan omaa puhekielen varianttia'
+      }
+    ]}
+    title="Suomen murteet"
+  />
+</InteractiveModule>
+
+## Sanasto: Opettele uusia sanoja
+
+Sanaston oppiminen on tärkeä osa kielen opiskelua. Käytä näitä muistikortteja apuna.
+
+<InteractiveModule title="Sanasto: Perussanoja" type="flashcard" description="Opettele suomen kielen perussanoja näiden muistikorttien avulla.">
+  <FlashCard
+    front="kirja"
+    back="book"
+    category="Substantiivit"
+  />
+</InteractiveModule>
+
+<InteractiveModule title="Sanasto: Lisää sanoja" type="flashcard" description="Jatka opiskelua näiden muistikorttien avulla.">
+  <FlashCard
+    front="lukea"
+    back="to read"
+    category="Verbit"
+  />
+</InteractiveModule>
+
+## Ääntäminen
+
+Suomen kielen ääntäminen on melko säännönmukaista, mutta vaatii harjoittelua.
+
+<InteractiveModule title="Suomen kielen ääntäminen" type="video" description="Katso tämä video suomen kielen ääntämisestä.">
+  <VideoPlayer
+    src="https://example.com/sample-video.mp4"
+    title="Suomen kielen ääntäminen"
+    description="Tässä videossa käydään läpi suomen kielen ääntämisen perusperiaatteet."
+    timestamps={[
+      { time: 10, label: 'Vokaalit' },
+      { time: 30, label: 'Konsonantit' },
+      { time: 60, label: 'Diftongit' }
+    ]}
+  />
+</InteractiveModule>
+
+## Kertaus
+
+Kertaa oppimaasi vastaamalla seuraaviin kysymyksiin.
+
+<InteractiveModule title="Kertauskysymyksiä" type="quiz" description="Testaa, mitä olet oppinut tähän mennessä.">
+  <Quiz
+    question="Mikä seuraavista on suomen kielen diftongi?"
+    options={["aa", "ie", "kk", "nn"]}
+    correctAnswer={1}
+    explanation="Diftongi on kahden eri vokaalin yhdistelmä samassa tavussa. 'ie' on diftongi, 'aa' on pitkä vokaali, 'kk' ja 'nn' ovat geminaattakonsonantteja."
+  />
+</InteractiveModule>
+
+---
+
+Nämä interaktiiviset elementit ovat esimerkkejä siitä, miten Oppikirjaston sisältöjä voidaan rikastaa. Opettajat voivat helposti lisätä vastaavia elementtejä omiin materiaaleihinsa käyttämällä valmiita komponentteja.

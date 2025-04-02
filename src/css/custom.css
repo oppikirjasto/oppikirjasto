@@ -1,45 +1,57 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* Docusaurus theme customization for Oppikirjasto */
 
-/* You can override the default Infima variables here. */
+/* Import base styles */
+@import url('./fonts.css');
+@import url('./components.css');
+
+/* Main theme variables */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary color palette - educational green */
+  --ifm-color-primary: #28855d;
+  --ifm-color-primary-dark: #247754;
+  --ifm-color-primary-darker: #22704f;
+  --ifm-color-primary-darkest: #1c5c41;
+  --ifm-color-primary-light: #2c9366;
+  --ifm-color-primary-lighter: #2e9a6b;
+  --ifm-color-primary-lightest: #34b37c;
+  
+  /* Secondary colors */
+  --ifm-color-secondary: #4a6fa5;
+  --ifm-color-secondary-dark: #426394;
+  --ifm-color-secondary-darker: #3e5d8c;
+  --ifm-color-secondary-darkest: #334d73;
+  --ifm-color-secondary-light: #527bb6;
+  --ifm-color-secondary-lighter: #5a82bc;
+  --ifm-color-secondary-lightest: #7295c7;
+  
+  /* Accent colors */
+  --ifm-color-accent: #e67e22;
+  
+  /* Typography */
+  --ifm-font-family-base: 'Nunito Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+  --ifm-heading-line-height: 1.3;
+  
+  /* Spacing */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-spacing-vertical: 1.5rem;
+  
+  /* Borders */
+  --ifm-global-radius: 8px;
+  --ifm-button-border-radius: 8px;
+  
+  /* Shadows */
+  --ifm-global-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --ifm-navbar-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  
+  /* Code blocks */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-.quiz {
-  padding: 20px;
-  border-radius: 7px;
-  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
-  display: grid;
-  justify-content: space-evenly;
-}
-
-.next-button,
-.answer-button {
-  width: 100%;
-  color: #ffffff;
-  background-color: #252d4a;
-  border-radius: 15px;
-  display: flex;
-  padding: 5px;
-  justify-content: flex-start;
-  align-items: center;
-  border: 5px solid #234668;
-  cursor: pointer;
-}
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode overrides */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -48,16 +60,428 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  
+  /* Dark mode background */
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #252525;
+  
+  /* Dark mode code highlighting */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Base element styling */
+body {
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-font-size-base);
+  line-height: var(--ifm-line-height-base);
+  color: var(--ifm-font-color-base);
+  background-color: var(--ifm-background-color);
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  line-height: var(--ifm-heading-line-height);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Link styling */
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-darker);
+  text-decoration: underline;
+}
+
+/* Button styling */
+.button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ifm-button-border-radius);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--ifm-color-primary-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.button--secondary {
+  background-color: var(--ifm-color-secondary);
+}
+
+.button--secondary:hover {
+  background-color: var(--ifm-color-secondary-darker);
+}
+
+.button--outline {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.button--outline:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Navigation styling */
+.navbar {
+  box-shadow: var(--ifm-navbar-shadow);
+  padding: 0.75rem var(--ifm-spacing-horizontal);
+  background-color: var(--ifm-background-surface-color);
+}
+
+.navbar__brand {
+  font-weight: 700;
+  font-family: var(--ifm-heading-font-family);
+}
+
+.navbar__logo {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbar__link {
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.navbar__link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+.navbar__link:hover:after {
+  width: 100%;
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+.navbar__link--active:after {
+  width: 100%;
+}
+
+/* Dropdown styling */
+.dropdown__menu {
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.5rem 0;
+}
+
+.dropdown__link {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown__link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
+[data-theme='dark'] .dropdown__link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Footer styling */
+.footer {
+  padding: 3rem var(--ifm-spacing-horizontal);
+  background-color: var(--ifm-background-surface-color);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.footer__title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer__link-item {
+  display: block;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-lighter);
+  text-decoration: none;
+}
+
+.footer__copyright {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Content container */
+.container {
+  padding: 2rem var(--ifm-spacing-horizontal);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main content area */
+article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+table th {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+  text-align: left;
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+table th, table td {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--ifm-global-radius);
+  margin: 2rem 0;
+  display: block;
+}
+
+/* Code block styling */
+pre {
+  border-radius: var(--ifm-global-radius);
+  margin-bottom: 2rem;
+}
+
+code {
+  border-radius: 3px;
+  font-size: var(--ifm-code-font-size);
+}
+
+/* Admonition (callout) styling */
+.admonition {
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  margin-bottom: 2rem;
+  border-left-width: 6px;
+}
+
+.admonition-heading {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+}
+
+/* Sidebar styling */
+.menu {
+  padding: 1rem 0;
+}
+
+.menu__link {
+  border-radius: var(--ifm-global-radius);
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.menu__link:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  text-decoration: none;
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+/* Pagination styling */
+.pagination-nav {
+  margin-top: 3rem;
+}
+
+.pagination-nav__link {
+  border-radius: var(--ifm-global-radius);
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.pagination-nav__sublabel {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.pagination-nav__label {
+  font-weight: 600;
+}
+
+/* Search bar styling */
+.navbar__search-input {
+  border-radius: var(--ifm-global-radius);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.navbar__search-input:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 133, 93, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  :root {
+    --ifm-font-size-base: 15px;
+    --ifm-spacing-horizontal: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 1.5rem var(--ifm-spacing-horizontal);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .container {
+    padding: 1rem var(--ifm-spacing-horizontal);
+  }
+}
+
+/* Quiz component styling */
+.quiz {
+  padding: 20px;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  display: grid;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  background-color: rgba(46, 133, 85, 0.05);
+  border: 1px solid rgba(46, 133, 85, 0.2);
+}
+
+.next-button,
+.answer-button {
+  width: 100%;
+  color: #ffffff;
+  background-color: var(--ifm-color-primary);
+  border-radius: var(--ifm-button-border-radius);
+  display: flex;
+  padding: 10px 15px;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  margin: 0.5rem 0;
+}
+
+.next-button:hover,
+.answer-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+  transform: translateY(-2px);
 }
 
 [data-theme='dark'] .next-button,
 [data-theme='dark'] .answer-button {
-  color: #000000;
-  background-color: #94a0ca;
+  color: #ffffff;
+  background-color: var(--ifm-color-primary);
 }
 
-/* Search bar cannot be scrolled by default. Make scroll possible here. */
+/* Search bar scrolling fix */
 .algolia-autocomplete .ds-dropdown-menu {
   overflow-y: scroll;
   position: relative;
@@ -67,7 +491,7 @@
   -ms-overflow-style: none;
 }
 
-/* Edge does not support height 100% (player hidden), therefore set it with vh here */
+/* Audio player height fix */
 .react-player audio {
   height: 5vh !important;
 }

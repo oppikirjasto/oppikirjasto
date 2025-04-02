@@ -1,0 +1,90 @@
+.flashcardContainer {
+  margin: 2rem 0;
+  perspective: 1000px;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--ifm-global-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.front {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-font-color-base);
+}
+
+.back {
+  background-color: var(--ifm-color-secondary-lightest);
+  color: var(--ifm-font-color-base);
+  transform: rotateY(180deg);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .front {
+  background-color: var(--ifm-color-primary-darkest);
+  color: white;
+}
+
+[data-theme='dark'] .back {
+  background-color: var(--ifm-color-secondary-darkest);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .flashcard {
+    height: 250px;
+  }
+  
+  .content {
+    font-size: 1.5rem;
+  }
+}
